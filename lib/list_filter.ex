@@ -7,7 +7,7 @@ defmodule ListFilter do
     )
   end
 
-  def is_int(elem) do
+  defp is_int(elem) do
     try do
       _ = String.to_integer(elem)
       true
